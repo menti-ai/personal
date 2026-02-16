@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menti- Personal Website</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ddd;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+            padding: 100px 20px 50px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid white;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section:nth-child(even) {
+            background-color: #fff;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #007bff;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .skill-item {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Experience */
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .experience-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Interests */
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .interest-item {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .interest-item:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Contact */
+        #contact p {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        #contact a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 10px;
+            }
+            .hero {
+                padding: 80px 20px 30px;
+            }
+            .skills-grid, .interests-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1>Menti</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="./images/pele.jpeg" alt="man playing" class="profile-img">
+            <h2>Welcome to My Personal Website</h2>
+            <p>Showcasing my skills, experiences, and passions.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm David menti, a frontend developer based in Nakuru. I have a passion  for web development. I specialize in Html, css, javascript, react and nodejs.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                   <h3 style="color: lab(85.67% -83.31 77.91);">troubleshooting</h3> 
+                    <p>Ability to quickly identify, analyze, and resolve hardware, software, and network issues to minimize downtime.</p
+                </div>
+                <div class="skill-item">
+                    <h3 style="color:hsl(106, 100%, 54%)";>communication</h3>
+                    <p>Clear and professional interaction with users to understand problems, explain solutions, and provide effective support.</p>
+                </div>
+                <!-- Add more as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <h3 style="color: #007bff;">Helpdesk support</h3>
+                    <p style="color: blue;">Bento Consultant Limited / September 2025 to date</p>
+                    <p>In a helpdesk support role, key achievements can include maintaining over 95% customer satisfaction  achieving high first-call resolution rates, and reducing average resolution time through efficient troubleshooting. Additional accomplishments may involve creating a knowledge base to minimize recurring issues, automating routine tasks to improve productivity, supporting user account management in systems like Active Directory and Microsoft 365, successfully deploying and configuring new hardware and software, strengthening and contributing to process improvements that enhance overall IT service delivery and team performance.
+.</p>
+                </div>
+                <!-- Add more as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="interests">
+        <div class="container">
+            <h2>Interests</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <h3>Becomming a softwar engineer</h3>
+                    <p>I am interested in becoming a software engineer because I enjoy solving complex problems and building practical solutions that can impact many people. Software engineering allows me to combine creativity with logical thinking to design applications, improve systems, and continuously learn new technologies. I am motivated by the challenge of turning ideas into functional products and contributing to innovations that make processes more efficient and user-friendly.
+</p>
+                </div>
+                <div class="interest-item">
+                    <h3>Networking</h3>
+                    <p>I am interested in networking because it focuses on building and maintaining the infrastructure that keeps systems connected, secure, and reliable. I enjoy understanding how devices communicate, troubleshooting connectivity issues, and optimizing network performance to ensure smooth operations. Networking allows me to work with evolving technologies, enhance cybersecurity, and play a critical role in supporting business continuity and digital communication.
+</p>
+                </div>
+                <!-- Add more as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email:davidmenti85@gmail.com</p>
+            <p>Phone: +254 794277039</p>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 David Menti. All rights reserved.</p>
+    </footer>
+</body>
+</html>
